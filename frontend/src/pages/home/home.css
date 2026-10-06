@@ -1,0 +1,163 @@
+
+
+.hero-container {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.logo-container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  gap: 10px;
+  margin-left: 0;
+}
+
+.brand {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  justify-content: start;
+  align-items: start;
+}
+
+.brand-container, .picture2 {
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.picture2 {
+  color: #e8b923;
+}
+
+.paragraph h1 {
+  margin: 0;
+  font-size: 55px;
+  line-height: 1.1;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.paragraph .subheader {
+  color: #e8b923;
+  margin-top: 5px;
+}
+
+.paragraph p {
+  max-width: 650px;
+  margin: 25px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+.book-session,
+.view-gallery {
+  padding: 13px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.book-session {
+  background: #e8b923;
+  color: #111111;
+  border: 2px solid #e8b923;
+}
+
+.book-session:hover {
+  background: white;
+  border-color: white;
+}
+
+.view-gallery {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.view-gallery:hover {
+  background: white;
+  color: #111111;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-container {
+    background-position: center;
+  }
+
+  .logo-container {
+    padding: 120px 20px 20px 20px;
+  }
+
+  .paragraph h1 {
+    font-size: 38px;
+  }
+
+  .paragraph p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .logo-container > span {
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    width: 55%;
+  }
+
+  .book-session,
+  .view-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

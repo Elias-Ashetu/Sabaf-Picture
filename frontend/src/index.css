@@ -1,0 +1,37 @@
+
+:root {
+  /* Main colors */
+  --color-primary: #f0bc10;
+  --color-primary-hover: #f5cc3a;
+
+  --color-black: #111111;
+  --color-black-light: #1a1a1a;
+
+  --color-white: #ffffff;
+  --color-gray: #999999;
+  --color-gray-light: #cccccc;
+
+  /* Backgrounds */
+  --color-background: #111111;
+  --color-surface: #1a1a1a;
+
+  /* Borders */
+  --color-border: #2d2d2d;
+
+  /* Text */
+  --color-text: #ffffff;
+  --color-text-muted: #999999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+}
+
