@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/images/logo.jpg";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const closeSideBar = () => {
     setIsSideBarOpen(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
           <NavLink to="/services" className="nav-link">
             Services
           </NavLink>
-          <NavLink to="/client-gallery" className="nav-link">
+          <NavLink to="/clientGallery" className="nav-link">
             Client Gallery
           </NavLink>
         </div>
@@ -131,4 +131,4 @@ const Navbar = () => {
     </>
   );
 };
-export default Navbar;
+

@@ -2,6 +2,7 @@
 import React from 'react'
 import './home.css'
 import heroImage from '../../assets/images/hero.jpg'
+import Logo1 from '../../assets/images/logo.jpg'
 export const Home = () => {
   return (
     <section className="hero-container"
@@ -9,7 +10,7 @@ export const Home = () => {
     >
 <div className="logo-container">
     <div className="brand-container">
-    <img src="logo.jpg" alt="Brand Logo" className="brand" />
+    <img src={Logo1} alt="Brand Logo" className="brand" />
     <span>
           <b>SABAF</b>
           <span className="picture2"> PICTURE</span>
