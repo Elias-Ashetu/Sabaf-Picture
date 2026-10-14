@@ -3,11 +3,13 @@ import React from 'react'
 import './home.css'
 import heroImage from '../../assets/images/hero.jpg'
 import Logo1 from '../../assets/images/logo.jpg'
+import { Navbar } from '../../component/layout/navbar'
 export const Home = () => {
   return (
     <section className="hero-container"
     style={{ backgroundImage: `url(${heroImage})` }}
     >
+      <Navbar />
 <div className="logo-container">
     <div className="brand-container">
     <img src={Logo1} alt="Brand Logo" className="brand" />

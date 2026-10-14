@@ -6,17 +6,18 @@ import { Gallery } from "./pages/gallery/gallery.jsx";
 import { Service } from "./pages/service/service.jsx";
 import { ClientGallery } from "./pages/clientGallery/clientGallery.jsx";
 import { PageNotFound } from "./component/layout/pageNotFound.jsx"
-
+import { Layout } from "./component/layout/layout.jsx";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/services" element={<Service />} />
-        <Route path="/clientGallery" element={<ClientGallery />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/clientGallery" element={<ClientGallery />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

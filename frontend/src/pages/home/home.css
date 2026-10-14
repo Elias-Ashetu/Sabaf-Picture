@@ -155,7 +155,7 @@
 
   .buttons {
     flex-direction: row;
-    width: 95%;
+    width: 60%;
 
     justify-content: center;
   }
