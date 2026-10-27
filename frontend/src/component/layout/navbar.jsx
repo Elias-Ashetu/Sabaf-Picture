@@ -10,7 +10,7 @@ export const Navbar = () => {
   };
   return (
     <>
-      <nav className="navbar">
+      <nav className="main-navbar">
        
         <NavLink to="/" className="logo"
          onClick={closeSideBar}>
@@ -29,8 +29,8 @@ export const Navbar = () => {
           <NavLink to="/gallery" className="nav-link">
             Gallery
           </NavLink>
-          <NavLink to="/services" className="nav-link">
-            Services
+          <NavLink to="/packages" className="nav-link">
+            Packages
           </NavLink>
           <NavLink to="/clientGallery" className="nav-link">
             Client Gallery
@@ -103,11 +103,11 @@ export const Navbar = () => {
             Gallery
           </NavLink>
           <NavLink
-            to="/services"
+            to="/packages"
             className="sidebar-link"
             onClick={closeSideBar}
           >
-            Services
+            Packages
           </NavLink>
           <NavLink
             to="/client-gallery"

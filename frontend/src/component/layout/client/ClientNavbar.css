@@ -1,4 +1,4 @@
-.navbar {
+.client-navbar {
     height: 5rem;
     width: 100%;
     display: flex;
@@ -9,7 +9,7 @@
     padding: 0 16px;
 }
 
-.navbar .content {
+.client-navbar .content {
     display: flex;
     align-items: center;
     gap: 20px;
